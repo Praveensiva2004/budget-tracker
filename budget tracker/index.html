@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Add a new transaction:</h2>
+        <div class="form-row">
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+                <option value="">Choose one...</option>
+                <option value="Income">Income</option>
+                <option value="Expense">Expense</option>
+            </select>
+        
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        
+        <div class="form-row1">
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount">
+        </div>
+        <div class="button">
+        <button onclick="addTransaction()">Add to transactions</button>
+        </div>
+        
+        <table id="transactionsTable">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            
+                
+        
+        </table>
+    </div>
+
+
+</body>
+</html>
